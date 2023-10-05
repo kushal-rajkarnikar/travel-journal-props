@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background: #f55a5a;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+header i {
+  font-size: 30px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 20px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.destination-block {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid white;
+  display: flex;
+}
+
+.destination-block > div:nth-child(2) {
+  margin-left: 30px;
+}
+
+.destination-block img {
+  width: 320px;
+  height: 180px;
+  object-fit: cover;
+  transition: all 0.65s ease-in-out;
+}
+
+.destination-block img:hover {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 8px 8px rgba(0, 0, 0, 0.11),
+    0 16px 16px rgba(0, 0, 0, 0.11), 0 32px 32px rgba(0, 0, 0, 0.11);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+main {
+  background: #1d1d1c;
+  color: white;
+  flex-grow: 1;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fa-location-dot {
+  color: #f55a5a;
+  font-size: 20px;
+}
+
+h2 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-top: 30px;
+}
+
+small b {
+  text-transform: uppercase;
+}
